@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <header>
+            <h1>Gallery</h1>
+            <p>Here are some of the projects John has worked on:</p>
+            <figure>
+                <img src="https://picsum.photos/800/400" alt="Project 1" />
+                <figcaption>Project 1: E-commerce Website</figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/800/400" alt="Project 2" />
+                <figcaption>Project 2: Blogging Platform</figcaption>
+            </figure>
+        </header>
+        <main>
+            <h2>Responsive Image Example</h2>
+            <picture>
+                <source
+                    srcset="
+                        https://picsum.photos/id/870/200/300?grayscale&blur=2
+                    "
+                    media="(max-width: 600px)"
+                />
+                <source
+                    srcset="https://picsum.photos/seed/picsum/200/300"
+                    media="(max-width: 1200px)"
+                />
+                <img
+                    src="https://picsum.photos/id/237/200/300"
+                    alt="Responsive Project"
+                />
+            </picture>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

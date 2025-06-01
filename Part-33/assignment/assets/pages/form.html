@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contact Form</h1>
+            <h2>Form Banner</h2>
+            <picture>
+                <source
+                    srcset="https://picsum.photos/400/300"
+                    media="(max-width: 600px)"
+                />
+                <source
+                    srcset="https://picsum.photos/800/600"
+                    media="(max-width: 1200px)"
+                />
+                <img
+                    src="https://picsum.photos/id/237/200/300"
+                    alt="Form Banner"
+                />
+            </picture>
+        </header>
+
+        <main>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" required />
+                    </p>
+                    <p>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" required />
+                    </p>
+                </fieldset>
+                <br /><br />
+                <fieldset>
+                    <legend>Message Details</legend>
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            required
+                        ></textarea>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
