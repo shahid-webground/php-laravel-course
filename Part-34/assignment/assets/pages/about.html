@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>About Us</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Our Mission</h2>
+                <p>
+                    We aim to provide <b>quality education</b> in
+                    <i>web development</i>. Our tutorials are
+                    <mark>easy to follow</mark> and
+                    <strong>structured for learning</strong>.
+                </p>
+            </section>
+            <section class="image-area">
+                <h2>Team Image</h2>
+                <img
+                    src="https://picsum.photos/850"
+                    srcset="
+                        https://picsum.photos/450   450w,
+                        https://picsum.photos/850   850w,
+                        https://picsum.photos/1500 1500w
+                    "
+                    sizes="(max-width: 480px) 450px, 
+                        (max-width: 900px) 850px, 
+                        (max-width: 1600px) 1500px"
+                    alt="Team Image"
+                />
+            </section>
+            <section>
+                <h2>Feedback Form</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>About Feedback</legend>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required />
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <input type="hidden" name="page" value="about" />
+                        </p>
+                    </fieldset>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </section>
+        </header>
+    </body>
+</html>

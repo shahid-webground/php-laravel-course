@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div>
+            <h1>Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Gallery Images</h2>
+                <img src="https://picsum.photos/450" alt="Gallery Image 1" />
+                <img src="https://picsum.photos/850" alt="Gallery Image 2" />
+            </div>
+            <div>
+                <h2>Feedback Form</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Gallery Feedback</legend>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required />
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                required
+                            />
+                        </p>
+                        <p>
+                            <input type="hidden" name="page" value="gallery" />
+                        </p>
+                    </fieldset>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Class 34</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Welcome to Our Website</h1>
+            </div>
+            <section class="nav-area">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="form.html">Form</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section class="intro-area">
+                <h2>Introduction</h2>
+                <p>
+                    This is a <b>demo website</b> designed for students. You can
+                    learn <i>HTML concepts</i> step by step. Important notes are
+                    <mark>highlighted</mark>, and
+                    <strong>key terms are emphasized</strong>. Some changes
+                    <del>are removed</del> while others <ins>are inserted</ins>.
+                </p>
+            </section>
+            <section class="table-area">
+                <h2>Topics Table</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Topics Covered</th>
+                            <th>Additional Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">HTML Basics</td>
+                            <td>Tags</td>
+                            <td rowspan="2">Core concepts</td>
+                        </tr>
+                        <tr>
+                            <td>Attributes</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Keep Practicing!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section class="demo-image-area">
+                <h2>Responsive Image</h2>
+                <img
+                    src="https://picsum.photos/v2/list?page=2&limit=100/450"
+                    srcset="
+                        https://picsum.photos/v2/list?page=2&limit=100/450   450w,
+                        https://picsum.photos/v2/list?page=2&limit=100/850   850w,
+                        https://picsum.photos/v2/list?page=2&limit=100/1500 1500w
+                    "
+                    sizes="(max-width: 480px) 450px, 
+                        (max-width: 900px) 850px, 
+                        (max-width: 1600px) 1500px"
+                    alt="Demo Image"
+                />
+            </section>
+        </main>
+        <footer>
+            <h2>Feedback Form</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Your Feedback</legend>
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                        />
+                    </p>
+                    <p>
+                        <input type="hidden" name="page" value="home" />
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </footer>
+    </body>
+</html>
